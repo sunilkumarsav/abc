@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: url(b.jpg);
+                background-size: cover;
+            }
+            .h{
+                color: white;
+                font-family: impact;
+                text-align: center;
+                font-size: 40px;
+                padding-top: 80px;
+            }
+            #box{
+                min-height: 200px;
+                width: 350px;
+                margin: 20px auto;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px groove #cddc39;
+                //color: white;
+                border-radius: 5px;
+                background:rgba(255,255,255,.4);
+                animation:abc 2s infinite alternate;
+            }
+            .t{
+                height: 45px;
+                width: 100%;
+                margin-bottom: 10px;
+                padding-left: 20px;
+                box-sizing: border-box;
+            }
+            ::placeholder{
+                color:#cddc39 ;
+            }
+            .btn{
+                height: 45px;
+                width: 100%;
+                background: #cddc39;
+                border: none;
+            }
+           /* #box:hover{
+                background: rgba(0,0,0,.4);
+                color: white;
+                transition: all ease 1s;
+                box-shadow: 0px 0px 20px 10px white inset,
+                0px 0px 0px 15px rgba(205,220,57,.6),
+                0px 0px 0px 30px rgba(205,220,57,.4),
+                0px 0px 0px 45px rgba(205,220,57,.2);
+
+            }*/
+            @keyframes abc{
+                from{
+                    
+                }
+                to{
+                    background: rgba(0,0,0,.4);
+                    color: white;
+                    transition: all ease 1s;
+                    box-shadow:0px 0px 20px 10px white inset,
+                    0px 0px 0px 15px rgba(205,220,57,.6),
+                    0px 0px 0px 30px rgba(205,220,57,.4),
+                0px 0px 0px 45px rgba(205,220,57,.2);
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <p class="h">Welcome to <span style="color: #cddc39;">Login Page</span> </p>
+        <div id="box">
+            <form>
+                Name <br><input type="email" class="t" placeholder="UserId.."><br>
+                Password <br><input type="password" class="t" placeholder="Password.."><br>
+                <input type="submit"  class="btn" value="Login">
+            </form>
+        </div>
+    </body>
+</html>
